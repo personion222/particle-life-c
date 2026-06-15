@@ -7,15 +7,15 @@
 #include "raylib.h"
 #include "utlist.h"
 
-#define SWIDTH 1600
-#define SHEIGHT 900
-#define SCREENR 3
+#define SWIDTH 1280
+#define SHEIGHT 720
+#define SCREENR 4
 #define WIDTH SWIDTH * SCREENR
 #define HEIGHT SHEIGHT * SCREENR
 #define FPS 1200
 
 #define PARTICLES 10000
-#define PTYPES 7
+#define PTYPES 8
 #define FRICTION 0.99
 #define ATTRACT 0.25
 #define REPEL -ATTRACT
