@@ -1,9 +1,8 @@
 # particle life c
 a (very basic) clone of [particle life](https://github.com/tom-mohr/particle-life-app) built with c and ~~sdl3~~ raylib :3
 
-| | |
-| :---: | :---: |
 | <img src="https://raw.githubusercontent.com/personion222/particle-life-c/refs/heads/main/assets/trial1.gif"> | <img src="https://raw.githubusercontent.com/personion222/particle-life-c/refs/heads/main/assets/trial2.gif"> |
+| :---: | :---: |
 | <img src="https://raw.githubusercontent.com/personion222/particle-life-c/refs/heads/main/assets/trial3.gif"> | <img src="https://raw.githubusercontent.com/personion222/particle-life-c/refs/heads/main/assets/trial4.gif"> |
 
 ## features
