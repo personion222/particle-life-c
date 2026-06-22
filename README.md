@@ -1,14 +1,16 @@
 # particle life c
 a (very basic) clone of [particle life](https://github.com/tom-mohr/particle-life-app) built with c and ~~sdl3~~ raylib :3
 
-![example 1](https://raw.githubusercontent.com/personion222/particle-life-c/refs/heads/main/assets/trial1.gif)
-![example 2](https://raw.githubusercontent.com/personion222/particle-life-c/refs/heads/main/assets/trial2.gif)
-![example 3](https://raw.githubusercontent.com/personion222/particle-life-c/refs/heads/main/assets/trial4.gif)
+| | |
+| :---: | :---: |
+| <img src="https://raw.githubusercontent.com/personion222/particle-life-c/refs/heads/main/assets/trial1.gif"> | <img src="https://raw.githubusercontent.com/personion222/particle-life-c/refs/heads/main/assets/trial2.gif"> |
+| <img src="https://raw.githubusercontent.com/personion222/particle-life-c/refs/heads/main/assets/trial3.gif"> | <img src="https://raw.githubusercontent.com/personion222/particle-life-c/refs/heads/main/assets/trial4.gif"> |
 
 ## features
 - simple graphics through [raylib](https://www.raylib.com/)
 - efficient, chunk-based particle interaction
 	+ simplifies time complexity from O(n^2) to O(n)
+	+ particles stored in linked lists for fast movement between chunks
 - randomized particle attraction matrix
 - blazingly fast 🚀 multi-threaded execution powered by [OpenMP](https://www.openmp.org/) (cpu utilisation go brrr)
 - configurable through DRY macros at compile time
