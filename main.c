@@ -9,20 +9,20 @@
 
 #define SWIDTH 1280
 #define SHEIGHT 720
-#define SCREENR 4
+#define SCREENR 8
 #define WIDTH SWIDTH * SCREENR
 #define HEIGHT SHEIGHT * SCREENR
-#define FPS 1200
+#define FPS 120
 
 #define PARTICLES 10000
-#define PTYPES 8
-#define FRICTION 0.99
-#define ATTRACT 0.25
-#define REPEL -ATTRACT
+#define PTYPES 7
+#define FRICTION 0.9
+#define ATTRACT 0.05
+#define REPEL -5.
 #define START_VEL 0
-#define MAXVEL 128
+#define MAXVEL 64
 
-#define INTERACTION 256
+#define INTERACTION 512
 #define MIN 16
 #define XCHUNKS (WIDTH + INTERACTION - 1) / INTERACTION
 #define YCHUNKS (HEIGHT + INTERACTION - 1) / INTERACTION
@@ -135,8 +135,10 @@ int main(void) {
 								// force.x *= -1. / INTERACTION * particle_dist + 1;
 								// force.y *= -1. / INTERACTION * particle_dist + 1;
 								if (particle_dist > MIN) {
-									force.x *= 1 / (particle_dist - h) + k;
-									force.y *= 1 / (particle_dist - h) + k;
+									// force.x *= 1 / (particle_dist - h) + k;
+									// force.y *= 1 / (particle_dist - h) + k;
+									force.x *= (-1. / INTERACTION) * particle_dist + 1;
+									force.y *= (-1. / INTERACTION) * particle_dist + 1;
 								} else {
 									force.x *= -REPEL / MIN * particle_dist + REPEL;
 									force.y *= -REPEL / MIN * particle_dist + REPEL;
